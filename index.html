@@ -74,8 +74,8 @@
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <a href="#" class="btn btn-outline-primary mr-2">註冊</a>
-            <a href="#" class="btn btn-primary">註冊</a>
+            <a href="#" class="btn btn-outline-primary mr-2" data-toggle="modal" data-target="#loginModal">登入</a>
+            <a href="#" class="btn btn-primary " data-toggle="modal" data-target="#registeModal">註冊</a>
           </form>
         </div>
       </div>
@@ -217,8 +217,177 @@
   </div>
 </section>
 
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7345.765543246554!2d120.19375891904907!3d22.99133788301929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e767ae3f1404d%3A0xb5f72c47ecac29ed!2z6Zi_5piO6LGs5b-D5Yas57KJ!5e0!3m2!1szh-TW!2stw!4v1578395938345!5m2!1szh-TW!2stw" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
 
+      <div class="col-md-6">
+        <form class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="name">姓名*</label>
+            <input type="text" class="form-control" id="name" placeholder="name" required>
+            <div class="invalid-feedback">請輸入姓名</div>
+          </div>
+           <div class="form-group">
+            <label for="tel">請輸入電話號碼*</label>
+            <input type="tel" class="form-control" id="tel" placeholder="tel" required>
+            <div class="invalid-feedback">請輸入電話號碼</div>
+          </div>
+           <div class="form-group">
+            <label for="email">請輸入 Email*</label>
+            <input type="email" class="form-control" id="email" placeholder="example@email" required> 
+            <div class="invalid-feedback">請輸入 Emai</div>
+          </div>
+           <div class="form-group">
+            <label for="number">請輸入人數*</label>
+            <input type="number" class="form-control" id="number" placeholder="number" required>
+            <div class="invalid-feedback">請輸入人數</div>
+          </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio1">需要素食</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio2">不需要素食</label>
+            </div>
+            <div class="text-right">
+            <button type="button" class="btn btn-secondary">取消</button>
+            <button type="submit" class="btn btn-primary">送出</button>
+            </div>
+          </div>
+        </form>
 
+        <script>
+          // Example starter JavaScript for disabling form submissions if there are invalid fields
+          (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+              var forms = document.getElementsByClassName('needs-validation');
+              // Loop over them and prevent submission
+              var validation = Array.prototype.filter.call(forms, function(form) {
+                form.addEventListener('submit', function(event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add('was-validated');
+                }, false);
+              });
+            }, false);
+          })();
+          </script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid">
+  <div class="row text-white">
+    <div class="col-md-6 bg-cover" style="background-image: url(https://images.unsplash.com/photo-1476029764343-569b983f5785?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+      <div class="row p-5">
+        <div class="col-md-9">
+            <small>加入我們</small>
+            <h3>你便乖乖的把琴抱進你的床去，你是不認識你父親的</h3>
+            <p>短暫的激情是不值錢的，年代的人還需要摔打，別人一定會聽你，但它只是一環，80年代的人不要跟70年代，別人可以拷貝我的模式，一個成功的創業者，東西得一點點幹，也要注重過程，千萬別告訴別人，賺錢模式越多越說明你沒有模式。</p>
+          <a href="#" class="btn btn-outline-warning">加入我們</a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-md-6 bg-cover" style="background-image: url(https://images.unsplash.com/photo-1484834762280-66a18a5a8f0b?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);">
+      <div class="row p-5">
+        <div class="col-md-9">
+            <small>品嚐佳餚</small>
+            <h3>踏著浪，我和世界不一樣，太多堅持</h3>
+            <p>一度剝落了的青春，寂寞的床偌大的房，我和我的倔強不能在shopping時候想你在路上會­遇見怎樣的穹蒼？戀人之間的時光，怎麼又是你，都騎虎難下了，唉呀，環境維護的話，發牢騷之前，打架了，大家不要吵架，我再也不逃了，我們回去了，謝謝，最恐怖的人，既然媽媽決定了，就算是死，辣辣的，一定很好吃。</p>
+          <a href="#" class="btn btn-outline-warning">品嚐佳餚</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="bg-light" >
+  <div class="container py-5">
+    © Copright 2017 六角學院 <a href="#">GitHub</a> <a href="#">Facebook</a> <a href="#">About</a>
+  </div>
+</footer>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-white">
+        <h5 class="modal-title" id="exampleModalLabel">登入</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+                <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email </label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#" data-dismiss="modal"  class="mr-auto" data-toggle="modal" data-target="#registeModal">切換到註冊</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="registeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title" id="exampleModalLabel">註冊</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+            </div>
+      <div class="modal-footer">
+        <a href="#" data-dismiss="modal"  class="mr-auto" data-toggle="modal" data-target="#loginModal">切換到登入</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
