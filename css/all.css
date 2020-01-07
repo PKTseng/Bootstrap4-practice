@@ -17,6 +17,10 @@
 
 @media (min-width: 768px) { 
   .text-md-dark{
-color: #333;
-}
+  color: #333;
+  }
+ }
+
+ .img-color{
+   color: seagreen;
  }
